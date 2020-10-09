@@ -9,7 +9,7 @@
 Product.delete_all
 #....
 Product.create! (
-    title: 'Build Chatbot Interactions',
+    title:'Build Chatbot Interactions',
     description:
         %{<p><em>This is a description for the item in question'</em> Thats about it tbh</p>},
     image_url: 'dpchat.jpg',
