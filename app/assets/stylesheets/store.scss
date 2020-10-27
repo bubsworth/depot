@@ -8,6 +8,7 @@
         list-style: none;
         padding: 0;
         margin: 0;
+        width: 1200px;
         li {
             padding: 1em;
             margin: 0;
@@ -26,6 +27,20 @@
             }
             .price {
                 font-size: 1.414em;
+            }
+            form, div {
+                display:inline;
+            }
+            input[type="submit"] {
+                background-color:#bf8eb1;
+                border-radius: 0.354em;
+                border: solid thin #bf8eb1;
+                color: white;
+                font-size: 1em;
+                padding: 0.354em 1em;
+            }
+            input[type="submit"]:hover {
+                background-color: #bf5fb5;
             }
         }
     }
