@@ -8,12 +8,30 @@
 
 Product.delete_all
 
-Product.create! (title:"Album 1",
-    description: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+Product.create!(
+    title: "Album 1",
+    description: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt "\
+    "ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco "\
+    "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in "\
+    "voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat "\
+    "non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
     image_url: 'sapphic_cover.jpg',
-    price: 20.00)
+    price: 4.00
+)
+
+Product.create!(
+    title: "Track 1",
+    description: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt "\
+    "non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+    image_url: 'TWTILY.JPG',
+    price: 0.79
+)
+
+Product.create!(
+    title: "Track 2",
+    description: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt "\
+    "non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+    image_url: 'where_to_start.png',
+    price: 0.79
+)
     
