@@ -14,10 +14,10 @@
  *= require_self
  */
 .notice, #notice{
-    background: #ffb;
+    background: #f0ad4e;
     border-radius: 0.5em;
-    border: solid 0.177em #882;
-    color: #882;
+    border: solid 0.177em #f0ad4e;
+    color: #f0ad4e;
     font-weight: bold;
     margin-bottom: 1em;
     padding: 1em 1.414em;
@@ -32,17 +32,24 @@
     @media (min-width: 30em) {
        text-align: left;
     }
-    background: #fff;
-    margin: 0;
-    border-bottom: 1px solid grey;
+    background-image: url("mainBG.jpg");
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     h1{
-       display:inline;
+       display:center;
+       text-align: center;
+       padding-top: 10rem;   
+       font-size: 8em;
+       color: #ffffff;
+       margin:0;
+       text-transform: uppercase;
     }
  }
  .content {
      margin: 0;
      padding: 0;
-
      display: flex;
      display: -webkit-flex;
      flex-direction: column;
@@ -55,7 +62,7 @@
      }
     nav {
         padding-bottom: 1em;
-        background: #bf8eb1;
+        background: #ffffff;
         text-align: center;
         @media (min-width: 30em) {
             text-align: left;
@@ -74,7 +81,7 @@
                 text-transform: uppercase;
                 letter-spacing: 0.354em;
                 a {
-                    color: #bfb;
+                    color: #000000;
                     text-decoration: none;
                 }
                 a:hover {
