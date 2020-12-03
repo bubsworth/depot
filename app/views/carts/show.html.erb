@@ -4,7 +4,7 @@
 
 <h2>Latest releases</h2>
 <table>
-    <% @cart.line_items.each do |item| %>
+    <% @cart.line_items.each do |line_item| %>
     <tr>
         <td class="quantity"><%= line_item.quantity %></td>
         <td><%= line_item.product.title %></td>
