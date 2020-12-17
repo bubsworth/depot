@@ -49,6 +49,7 @@
     }
     background-image: url("mainBG.jpg");
     height: 350px;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -77,6 +78,7 @@
      }
     nav {
         padding-bottom: 1em;
+        width: 75;
         background: #ffffff;
         text-align: center;
         border-right: solid thin ;

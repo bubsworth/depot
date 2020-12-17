@@ -16,13 +16,13 @@
       <nav class="nav">
       <% if @cart %>
         <div id="cart" class="carts">
-          <%= render @cart %>
+          <%= render_if @cart && @cart.line_items.any?, @cart %>
         </div>
       <% end %>
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/questions">Media</a></li>
-          <li><a href="/news">News</a></li>
+          <li><a href="/news">News</a></li>s
           <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>
