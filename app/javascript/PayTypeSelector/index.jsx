@@ -5,7 +5,6 @@ import CreditCardPayType from './CreditCardPayType';
 import CheckPayType from './CheckPayType';
 import PurchaseOrderPayType from './PurchaseOrderPayType';
 class PayTypeSelector extends React.Component {
-
   constructor(props) {
     super(props);
     this.onPayTypeSelected = this.onPayTypeSelected.bind(this);
@@ -29,13 +28,14 @@ class PayTypeSelector extends React.Component {
       <div>
         <div className="field">
           <label htmlFor="order_pay_type">Pay Type</label>
-          <select id="order_pa_type" onChangename="order[pay_type">
+          <select id="order_pay_type" onChange={this.onPayTypeSelected} name="order[pay_type">
             <option value="">Select a payment method</option>
             <option value="Check">Check</option>
             <option value="Credit Card">Credit card</option>
             <option value="Purchase order">Purchase order</option>
           </select>
         </div>
+        <PayTypeCustomComponent/>
       </div>
     );
   }
