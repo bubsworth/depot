@@ -11,7 +11,7 @@ class PurchaseOrderType extends React.Component {
                   id="order_po_number"/>
         </div>
       </div>
-    )
+    );
   }
 }
 

@@ -10,8 +10,8 @@ class PayTypeSelector extends React.Component {
     this.state = {selectedPayType: null };
   }
 
-  onPayTypeSelector(event) {
-    this.setState({ selectedPayType: event.target.value});
+  onPayTypeSelected(event) {
+    this.setState({ selectedPayType: event.target.value });
   }
 
   render() {
@@ -27,10 +27,10 @@ class PayTypeSelector extends React.Component {
       <div>
         <div className="field">
           <label htmlFor="order_pay_type">Pay Type</label>
-          <select id="order_pay_type" onChange={this.onPayTypeSelected} name="order[pay_type">
+          <select id="order_pay_type" onChange={this.onPayTypeSelected} name="order[pay_type]">
             <option value="">Select a payment method</option>
             <option value="Check">Check</option>
-            <option value="Credit Card">Credit card</option>
+            <option value="Credit card">Credit card</option>
             <option value="Purchase order">Purchase order</option>
           </select>
         </div>

@@ -12,7 +12,7 @@ class CreditCardPayType extends React.Component {
         </div>
         <div className="field">
           <label htmlFor="order_expiration_number">Expiry #</label>
-          <input  type="password"
+          <input  type="text"
                   name="order[expiration_number]"
                   id="order_expiration_number"
                   size="9" 
@@ -22,6 +22,5 @@ class CreditCardPayType extends React.Component {
     );
   }
 }
-
 
 export default CreditCardPayType
