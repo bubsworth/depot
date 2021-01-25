@@ -1,5 +1,4 @@
 import React from 'react';
-
 class CheckPayType extends React.Component {
   render () {
     return (

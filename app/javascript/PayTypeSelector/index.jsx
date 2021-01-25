@@ -1,5 +1,4 @@
 import React from 'react';
-
 import NoPayType from './NoPayType';
 import CreditCardPayType from './CreditCardPayType';
 import CheckPayType from './CheckPayType';
