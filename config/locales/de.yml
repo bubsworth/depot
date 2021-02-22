@@ -30,6 +30,22 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 de:
+  activerecord:
+    errors:
+      messages:
+        inclusion:  "ist nicht in der Liste enthalten"
+        blank:      "Ich kann nicht zeichnen eine leere"
+  carts:
+    cart:
+      title:      "Ihr Warenkorb"
+      empty:      "Leerer Warenkorb"
+      checkout:   "Zur Kasse"  
+  errors:
+    template:     
+      body:     "Es gibt Probleme mit den folgenden Feldern"
+      header:     
+        one:    "1 Fehler hat verhindert, dass dieser %{model} gespeichert wird" 
+        other:  "%{count} Fehler haben verhindert, dass dieses %{model} gespeichert werden kann."
   layouts:
     application:
       title:      "Beth Hubbard Music"
@@ -37,15 +53,6 @@ de:
       questions:  "Fragen"
       news:       "Nachricht"
       contact:    "Kontaktieren"
-  store:
-    index:
-      title_html: "Beth Hubbard Music"
-      add_html:   "In den Warenkorb legen"
-  carts:
-    cart:
-      title:      "Ihr Warenkorb"
-      empty:      "Leerer Warenkorb"
-      checkout:   "Zur Kasse"
   number:
     currency:
       format:
@@ -54,3 +61,29 @@ de:
         separator:  "."
         delimiter:  ","
         format:     "%n&nbsp;%u"
+  orders:
+    new:
+      legend:                   "Bitte geben Sie Ihre Daten ein"
+    form:
+      name:                     "Name"
+      address_html:             "Address"
+      email:                    "E-mail"
+      pay_type:                 "Bezahlen mit"
+      pay_prompt_html:          "Wählen Sie eine Zahlungsmethode"
+      submit:                   "Bestellung aufgeben"
+      pay_types:
+        check:                  "Scheck"
+        credit_card:            "Kreditkarte"
+        purchase_order:         "Bestellung"
+      check_pay_type:
+        routing_number:         "Routingnummer #"
+        account_number:         "Kontonummer #"
+      credit_card_pay_type:
+        cc_number:              "CC #"
+        expiration_date:        "Verfall"
+      purchase_order_pay_type:  
+        po_number:              "PO #"
+  store:
+    index:
+      title_html: "Beth Hubbard Music"
+      add_html:   "In den Warenkorb legen"
