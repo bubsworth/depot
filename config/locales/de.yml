@@ -29,28 +29,28 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
-en:
+de:
   layouts:
     application:
       title:      "Beth Hubbard Music"
-      home:       "Home"
-      questions:  "Questions"
-      news:       "News"
-      contact:    "Contact"
+      home:       "Startseite"
+      questions:  "Fragen"
+      news:       "Nachricht"
+      contact:    "Kontaktieren"
   store:
     index:
       title_html: "Beth Hubbard Music"
-      add_html:   "Add to Cart"
+      add_html:   "In den Warenkorb legen"
   carts:
     cart:
-      title:      "Your Cart"
-      empty:      "Empty Cart"
-      checkout:   "Checkout"
+      title:      "Ihr Warenkorb"
+      empty:      "Leerer Warenkorb"
+      checkout:   "Zur Kasse"
   number:
     currency:
       format:
-        unit:       "£"
+        unit:       "£UK"
         precision:  2
         separator:  "."
         delimiter:  ","
-        format:     "%u%n"
+        format:     "%n&nbsp;%u"
