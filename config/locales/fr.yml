@@ -31,6 +31,14 @@
 
 fr:
   activerecord:
+    models:
+      order:        "commander"
+    attributes:
+      order:
+        address:    "Adresse"
+        name:       "Nom"
+        email:      "E-mail"
+        pay_type:   "Mode de paiement"
     errors:
       messages:
         inclusion:  "n'est pas inclus dans la liste"
@@ -87,3 +95,4 @@ fr:
     index:
       title_html: "Beth Hubbard Music"
       add_html: "Ajouter au panier"
+  thanks: "Merci pour votre commande"

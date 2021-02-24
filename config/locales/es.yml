@@ -31,6 +31,14 @@
   
 es:
   activerecord:
+    models:
+      order:        "pedido"
+    attributes:
+      order:
+        address:    "Direcci%oacute;n"
+        name:       "Nombre"
+        email:      "E-mail"
+        pay_type:   "Forme de pago"
     errors:
       messages:
         inclusion:  "no est&aacute; incluido en la lista"
@@ -87,4 +95,5 @@ es:
     index:
       title_html: "Beth Hubbard Music"
       add_html:   "A&ntilde;adir al Carrito"
+  thanks: "Gracias por su pedido"
 
