@@ -13,7 +13,10 @@
  *= require_tree .
  *= require_self
  */
-
+  .locale {
+    float: right;
+    margin: 1em;
+  }
  nav.logged_in_nav {
    border-top: solid thin #bf8eb1;
    padding: 0.354em 0;
