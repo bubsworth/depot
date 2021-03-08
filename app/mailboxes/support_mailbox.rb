@@ -7,3 +7,4 @@ class SupportMailbox < ApplicationMailbox
     puts "END SupportMailbox#process:"
   end
 end
+
