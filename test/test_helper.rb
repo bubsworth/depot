@@ -23,6 +23,14 @@ class ActiveSupport::TestCase
       end
     end
 
+    def logout
+      delete logout_url
+    end
+
+    def setup
+      login_as users(:one)
+    end
+
     class ActionDispatch::IntegrationTest
       include AuthenticationHelpers
     end
