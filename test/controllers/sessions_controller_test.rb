@@ -29,9 +29,9 @@ class SessionsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should fail login" do
-    face = users(:one)
+    dave = users(:one)
     post login_url, params: { name: dave.name, password: 'wrong' }
-    assert_redirected_to logn_url
+    assert_redirected_to login_url
   end
 
   test "should logout" do
