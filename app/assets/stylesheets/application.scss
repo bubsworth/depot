@@ -146,18 +146,12 @@
     @media (min-width: 30em) {
        text-align: left;
     }
-    background-image: url("mainBG.jpg");
-    height: 350px;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     h1{
        display:center;
        text-align: center;
-       padding-top: 10rem;   
+       padding: 5rem 0;   
        font-size: 8em;
-       color: #ffffff;
+       color: #000;
        margin:0;
        text-transform: uppercase;
     }
