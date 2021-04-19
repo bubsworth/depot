@@ -3,18 +3,21 @@
     <aside class="notice"><%= flash[:alert] %></aside>
   <% end %>
 
-  <%= form_tag do %>
-    <h2>Please Log In</h2>
-    <div class="field">
-      <%= label :name, 'Name' %>
-      <%= text_field_tag :name, params[:name] %>
-    </div>
-    <div class="field">
-      <%= label :password, 'Password' %>
-      <%= text_field_tag :password, params[:password] %>
-    </div>
-    <div class="actions">
-      <%= submit_tag "Login" %>
-    </div>
-  <% end %>
+  <div class="center_box">
+    <%= form_tag do %>
+      <h2 style="text-align:center;">Please Log In</h2>
+      <div class="field">
+        <%= label :name, 'Name' %>
+        <%= text_field_tag :name, params[:name] %>
+      </div>
+      <div class="field">
+        <%= label :password, 'Password' %>
+        <%= text_field_tag :password, params[:password] %>
+      </div>
+      <div class="actions">
+        <%= submit_tag "Login" %>
+      </div>
+    <% end %>
+  <div>
+
 </section>
