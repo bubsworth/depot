@@ -125,10 +125,13 @@
 
   #cart {
   article {
+    position:fixed; 
+    z-index: 1000;
+    right: 0;
     h2 {
       margin-top: 0
     }
-    background: white;
+    background: #bf8eb1;
     border-radius: 0.5em;
     margin: 1em;
     padding: 1.414em;
