@@ -5,17 +5,17 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by(name: params[:name])
-    if user.try(:authenticate, params[:password])
-      session[:user_id] = user.id
+    administrator = Administrator.find_by(name: params[:name])
+    if administrator.try(:authenticate, params[:password])
+      session[:administrator_id] = administrator.id
       redirect_to admin_url
     else
-      redirect_to login_url, alert: "Invalid user/password combination"
+      redirect_to login_url, alert: "Invalid administrator/password combination"
     end
   end
 
   def destroy
-    session[:user_id] = nil
+    session[:administrator_id] = nil
     redirect_to store_index_url, notice: "Logged out"
   end
 end

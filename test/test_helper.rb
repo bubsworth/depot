@@ -12,14 +12,14 @@ class ActiveSupport::TestCase
   # Add more helper methods to be used by all tests here...
 
   module AuthenticationHelpers
-    def login_as(user)
+    def login_as(administrator)
       if respond_to? :visit
         visit login_url
-        fill_in :name, with: user.name
+        fill_in :name, with: administrator.name
         fill_in :password, with: 'secret'
         click_on 'Login'
       else
-        post login_url, params: { name: user.name, password: 'secret'}
+        post login_url, params: { name: administrator.name, password: 'secret'}
       end
     end
 
@@ -28,7 +28,7 @@ class ActiveSupport::TestCase
     end
 
     def setup
-      login_as users(:one)
+      login_as administrators(:one)
     end
 
     class ActionDispatch::IntegrationTest

@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Administrator.delete_all
-User.delete_all
+Administrator.delete_all
 Product.delete_all
 
 # Administrator.create!(
@@ -16,12 +16,12 @@ Product.delete_all
 #   password: "top-secret"
 # )
 
-User.create!(
+Administrator.create!(
   name: "Bob",
   password: "secret123"
 )
 
-User.create!(
+Administrator.create!(
   name: "Alice",
   password: "secret123"
 )
