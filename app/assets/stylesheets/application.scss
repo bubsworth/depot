@@ -18,6 +18,7 @@
     margin: 1em;
   }
  nav.logged_in_nav {
+   width: 240px;
    border-top: solid thin #bf8eb1;
    padding: 0.354em 0;
    margin-top: 0.354em;
@@ -171,7 +172,7 @@
      }
     nav {
         padding-bottom: 1em;
-        width: 75;
+        max-width: 260px;
         background: #ffffff;
         text-align: center;
         border-right: solid thin ;
