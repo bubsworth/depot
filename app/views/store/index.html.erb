@@ -2,15 +2,13 @@
   <aside id="notice"><%= notice %></aside>
 <% end%>
 
-<h1><%= t('.title_html') %></h1>
-
 <ul class="catalog">
   <% cache @products do %>
     <% @products.each do |product|%>
       <% cache product do %>
         <li>
           <div class="product_image">
-            <%= image_tag(product.image_url) %>
+            <%= image_tag(product.image_url, style:"width:270px; height:auto;") %>
           </div>
           <div class="product_info">
             <h2><%= product.title %></h2>
