@@ -16,7 +16,7 @@
   </table>
 
   <div class="actions">
-    <%= button_to t('.empty'), cart, method: :delete, data: { confirm: 'Are you sure?'} %>
-    <%= button_to t('.checkout'), new_order_path, method: :get, class: "checkout" %>
+    <%= button_to t('.empty'), cart, method: :delete, data: { confirm: 'Are you sure?'}, style: "color:#bf8eb1; background-color:#fff; border: solid 1px #bf8eb1;" %>
+    <%= button_to t('.checkout'), new_order_path, method: :get, class: "checkout", style: "color:#bf8eb1; background-color:#fff; border: solid 1px #bf8eb1;" %>
   </div>
 </article>
